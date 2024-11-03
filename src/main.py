@@ -91,11 +91,11 @@ def apply_denoise_in_tiles(model, input_image, tile_size, overlap=10):
 
 def main():
     # Load Bayer RAW image and convert to RGB
-    input_file = r"D:\assignment2\data\eSFR_1920x1280_12b_GRGB_6500K_60Lux.raw"
+    input_file = r"C:\Users\suram\OneDrive\Desktop\ansh\pyhthin\CVassignment2\AIDenoisingAndEdgeEnhancement\data\eSFR_1920x1280_12b_GRGB_6500K_60Lux.raw"
     input_image_12bit = load_raw_image_tile(input_file)
 
     # Load pre-trained AI model (PyTorch)
-    model_path = r'D:\assignment2\src\ai_model\model_color\model_color.pth'
+    model_path = r'C:\Users\suram\OneDrive\Desktop\ansh\pyhthin\CVassignment2\AIDenoisingAndEdgeEnhancement\src\ai_model\model_color\model_color.pth'
     model = load_pytorch_model(model_path)
 
     # Apply denoise with larger tile size and proportional overlap
